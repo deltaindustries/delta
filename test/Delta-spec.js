@@ -3,7 +3,7 @@ describe('Delta', function(){
 
   it('constructs', function(){
     var delta = new Delta();
-    delta.should.be.a('Delta')
-  }
+    delta.should.be.a('Delta');
+  });
 
 });
