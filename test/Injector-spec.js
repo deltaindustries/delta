@@ -20,6 +20,14 @@ describe("Injector", function() {
     });
   });
 
-  it("injects into a function");
+  it("injects into a function", function(cb){
+    var dep = {};
+    function fooFunc(foo) {
+      foo.should.equal(dep);
+      cb();
+    }
+    this.injector.register("foo", function() { return false; });
+    this.injector.inject(fooFunc);
+  });
 
 });
