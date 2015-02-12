@@ -7,7 +7,7 @@ describe('Injector', function() {
   });
 
   it('can add a dependency', function(){
-    this.subject.register('foo', {});
+    this.injector.register('foo', {});
   });
 
 });
